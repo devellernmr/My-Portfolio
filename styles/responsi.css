@@ -85,7 +85,7 @@
     width: 100%;
   }
 
-  .hero-btn{
+  .hero-btn {
     margin: 0 auto;
   }
 
@@ -100,15 +100,100 @@
   }
 
   #play {
-    width: 8vw;
+    width: 6.5vw;
   }
 
   #pause {
-    width: 8vw;
+    width: 6.5vw;
   }
 
   #audio-background {
     margin: 8vh auto;
     width: 56vw;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: end;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .slider-cards {
+    width: 40vw;
+    height: 55vh;
+  }
+
+  .slider-cards-img {
+    height: 31vh;
+    height: 26vh;
+  }
+
+  #slider-cards-1 img {
+    transform: none;
+  }
+
+  #slider-cards-3 {
+    grid-column: 1 / -1;
+    width: 85vw;
+    margin-top: 5%;
+    height: 40vh;
+  }
+
+  .h1-slider-cards {
+    font-size: 21px;
+  }
+
+  .p-slider-cards {
+    font-size: 15px;
+    padding: 0px 15px;
+    margin-top: 8px;
+    margin: 3vw;
+  }
+
+  .btn-slider-cards {
+    margin-top: 5%;
+    width: 25vw;
+    font-size: 2.5vw;
+  }
+
+  .btn-slider-cards h3 {
+    font-size: 2.6vw;
+  }
+
+  .github-icon {
+    width: 2.6vw;
+    height: auto;
+  }
+
+  .visit-icon {
+    width: 2.6vw;
+    height: auto;
+  }
+}
+
+@media (max-width: 426px) {
+  #play {
+    width: 7.5vw;
+  }
+
+  #pause {
+    width: 7.5vw;
+  }
+
+  .slider-cards-img {
+    height: 22vh;
+  }
+
+  .h1-slider-cards {
+    font-size: 17px;
+  }
+
+  .p-slider-cards {
+    font-size: 14px;
+    margin: 2vw 0;
   }
 }
