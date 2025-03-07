@@ -78,3 +78,40 @@ li a:hover{
     color: wheat; 
     border-bottom: solid 2px wheat;
 }
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+/* Lista de navegação */
+.nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-list li {
+    padding: 10px 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}

@@ -1,59 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --font-primary: "Poiret One", sans-serif;
-    --primary-color-text: rgb(160, 97, 255);
+  --font-primary: "Poiret One", sans-serif;
+  --primary-color-text: rgb(160, 97, 255);
 }
 
 html {
-    max-width: 100vw;
-    max-height: 100vh;
-    font-family: var(--font-primary);
+  max-width: 100vw;
+  max-height: 100vh;
+  font-family: var(--font-primary);
 }
 
-html, body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    min-height: 100vh;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
 }
 
 body {
-    background-color: #0a060e;
-    overflow-x: hidden; /* Impede rolagem lateral */
+  background-color: #0a060e;
+  overflow-x: hidden; /* Impede rolagem lateral */
 }
 
-
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .frame {
-    position: fixed;           /* Fixa na tela */
-    top: 0;
-    left: 0;
-    width: 100vw;              /* Ocupa toda a largura */
-    height: 100vh;             /* Ocupa toda a altura */
-    z-index: 1000;             /* Fica sobre os demais elementos */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: fixed; /* Fixa na tela */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Ocupa toda a largura */
+  height: 100vh; /* Ocupa toda a altura */
+  z-index: 1000; /* Fica sobre os demais elementos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-    /* Estado inicial dos elementos do site */
-    .container {
-    opacity: 0;
-    transform: translateY(20px); /* Leve deslocamento para baixo */
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  }
-  
-  /* Classe que ativa a animação de fade-in e deslocamento para a posição final */
-  .container.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Estado inicial dos elementos do site */
+.container {
+  opacity: 0;
+  transform: translateY(20px); /* Leve deslocamento para baixo */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Classe que ativa a animação de fade-in e deslocamento para a posição final */
+.container.show {
+  opacity: 1;
+  transform: translateY(0);
+}

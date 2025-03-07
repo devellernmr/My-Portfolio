@@ -1,0 +1,114 @@
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .logo {
+    min-width: 0px;
+  }
+
+  .logo a {
+    color: var(--primary-color-text);
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    text-align: center;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  nav {
+    padding: 0 10vw;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 13vh;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  /* Ícone do menu hambúrguer */
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+  }
+
+  .menu-toggle .bar {
+    width: 38px;
+    height: 4.5px;
+    background-color: var(--primary-color-text);
+    box-shadow: 0 0 10px var(--primary-color-text);
+    transition: 0.3s;
+  }
+
+  /*main*/
+
+  .main-container-hero {
+    margin-top: 5px;
+  }
+
+  .hero-text {
+    font-size: 14vw;
+    margin: 2.5vh 4vw;
+  }
+  .hero-text2 {
+    font-size: 11vw;
+    margin-top: 16vh;
+  }
+
+  .hero-p {
+    color: white;
+    margin: 1vh 3vw;
+    font-size: 17px;
+    text-align: right;
+    width: 100%;
+  }
+
+  .hero-btn{
+    margin: 0 auto;
+  }
+
+  #hero-btn-contact {
+    width: 30vw;
+    margin-left: 5vw;
+  }
+
+  #hero-btn-projects {
+    width: 30vw;
+    margin-right: 5vw;
+  }
+
+  #play {
+    width: 8vw;
+  }
+
+  #pause {
+    width: 8vw;
+  }
+
+  #audio-background {
+    margin: 8vh auto;
+    width: 56vw;
+  }
+}

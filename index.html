@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/loading.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/responsi.css">
     <script src="script.js"></script>
   </head>
   <body>
@@ -24,12 +25,23 @@
         <header>
             <nav>
                 <div class="logo" id="logoNav"><h1><a href="#">Ll</a></h1></div>
-                <ul>
-                    <li class="navbar-links"><a href="#home" class="navbar-links-a active">home</a></li>
-                    <li class="navbar-links"><a href="#projects" class="navbar-links-a active">projects</a></li>
-                    <li class="navbar-links"><a href="#about" class="navbar-links-a active">about</a></li>
-                    <li class="navbar-links"><a href="#contact" class="navbar-links-a active">contact</a></li>
-                </ul>
+                  <ul>
+                      <li class="navbar-links"><a href="#home" class="navbar-links-a active">home</a></li>
+                      <li class="navbar-links"><a href="#projects" class="navbar-links-a active">projects</a></li>
+                      <li class="navbar-links"><a href="#about" class="navbar-links-a active">about</a></li>
+                      <li class="navbar-links"><a href="#contact" class="navbar-links-a active">contact</a></li>
+                  </ul>
+                  <div class="menu-toggle" id="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                  </div>
+                  <ul class="nav-list" id="nav-list">
+                      <li><a href="#">Início</a></li>
+                      <li><a href="#">Sobre</a></li>
+                      <li><a href="#">Serviços</a></li>
+                      <li><a href="#">Contato</a></li>
+                  </ul>
             </nav>
         </header>
         <main>
@@ -42,18 +54,17 @@
                       </h1>
                       <h2 class="hero-text2">Leo Eller</h2>
                   <div class="hero-group1">
-                    <div class="hero-btn">
-                      <button id="hero-btn-projects">
-                        <a href="#projects" id="hero-a-btn-projects">Projects</a>
-                      </button>
-                      <button id="hero-btn-contact">
-                        <a href="#" id="hero-a-btn-contact">Contact</a>
-                      </button>
-                    </div>
-                      <p class="hero-p">
-                        Olá! Sou um programador <span style="color: wheat; font-weight: bolder;">Front-End</span>, Utilizo as ferraments <br> <span style="color: rgb(255, 89, 0); font-weight: bolder;">Html</span>, <span style="color: rgb(0, 115, 255); font-weight: bolder;">Css</span>, <span style="color: rgb(255, 217, 0); font-weight: bolder;">JavaScript</span>, <span style="color: rgb(0, 200, 255); font-weight: bolder;">React</span> e também <span style="color: rgb(1, 33, 177); font-weight: bolder;">python</span>. 
+                      <p class="hero-p"> <!---->
+                        Olá! Sou um programador <span style="color: wheat; font-weight: bolder;">Front-End</span>, Utilizo as ferramentas  <span style="color: rgb(255, 89, 0); font-weight: bolder;">Html</span>, <span style="color: rgb(0, 115, 255); font-weight: bolder;">Css</span>, <span style="color: rgb(255, 217, 0); font-weight: bolder;">JavaScript</span>, <span style="color: rgb(0, 200, 255); font-weight: bolder;">React</span> e também <span style="color: rgb(1, 33, 177); font-weight: bolder;">python</span>. 
                       </p>
-
+                      <div class="hero-btn">
+                        <button id="hero-btn-projects">
+                          <a href="#projects" id="hero-a-btn-projects">Projects</a>
+                        </button>
+                        <button id="hero-btn-contact">
+                          <a href="#" id="hero-a-btn-contact">Contact</a>
+                        </button>
+                      </div>
                       <div id="audio-background">
                         <audio id="myAudio" src="Gibran Alcocer - Idea 15 (Slowed + Reverb).mp3"></audio>
                         <button id="play">
@@ -68,7 +79,6 @@
                         </button>
                         <input type="range" id="volume" min="0" max="1" step="0.05"><br>
                       </div>
-                      <div id="audio-title"><p>Gibran Alcocer - Idea 15</p></div>
                   </div>
                 </div>
             </section>
